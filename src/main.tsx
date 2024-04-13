@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import Router from "./Router";
 import Layout from "./Layout";
 import "./styles/reset.css";
+import "./styles/font.css";
 
 ReactDOM.createRoot(
   document.getElementById("root")!

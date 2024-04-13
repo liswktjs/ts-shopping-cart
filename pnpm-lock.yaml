@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@stylexjs/eslint-plugin': ^0.5.1
   '@stylexjs/stylex': ^0.5.1
   '@tanstack/react-query': ^5.28.12
   '@types/react': ^18.2.66
@@ -28,6 +29,7 @@ dependencies:
   react-router-dom: 6.22.3_biqbaboplfbrettd7655fr4n2y
 
 devDependencies:
+  '@stylexjs/eslint-plugin': 0.5.1
   '@types/react': 18.2.73
   '@types/react-dom': 18.2.23
   '@typescript-eslint/eslint-plugin': 7.5.0_g77bhzxf5vnp2ug4ktk2ntgcnm
@@ -753,6 +755,12 @@ packages:
       '@stylexjs/stylex': 0.5.1
     transitivePeerDependencies:
       - supports-color
+    dev: true
+
+  /@stylexjs/eslint-plugin/0.5.1:
+    resolution: {integrity: sha512-bt5lZZAgOqscmF09wXyNNV7K2dkLgqY8mTabezf0NMkPmm4BvYuKij+aMo41Z56AdA2WX4NyCb6GaVUwihvmRQ==}
+    dependencies:
+      micromatch: 4.0.5
     dev: true
 
   /@stylexjs/shared/0.5.1:

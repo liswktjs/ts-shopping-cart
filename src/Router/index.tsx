@@ -7,28 +7,50 @@ import ProductDetail from "../Pages/ProductDetail";
 import OrderPayment from "../Pages/OrderPayment";
 import OrderList from "../Pages/OrderList";
 import OrderDetail from "../Pages/OrderDetail";
+import { PATH } from "./path";
+import Layout from "../Layout";
 
 const Router = () => {
   const router = createBrowserRouter([
     {
-      path: "/",
-      element: <HomePage />,
+      path: PATH.home,
+      element: (
+        <Layout>
+          <HomePage />
+        </Layout>
+      ),
     },
     {
-      path: "/product/:productId",
-      element: <ProductDetail />,
+      path: `${PATH.productDetail}/:productId`,
+      element: (
+        <Layout>
+          <ProductDetail />
+        </Layout>
+      ),
     },
     {
-      path: "/order-payment",
-      element: <OrderPayment />,
+      path: PATH.orderPayment,
+      element: (
+        <Layout>
+          <OrderPayment />
+        </Layout>
+      ),
     },
     {
-      path: "/order-list",
-      element: <OrderList />,
+      path: PATH.orderList,
+      element: (
+        <Layout>
+          <OrderList />
+        </Layout>
+      ),
     },
     {
-      path: "/order-detail/:orderId",
-      element: <OrderDetail />,
+      path: `${PATH.orderDetail}/:orderId`,
+      element: (
+        <Layout>
+          <OrderDetail />
+        </Layout>
+      ),
     },
   ]);
 

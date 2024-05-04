@@ -6,4 +6,9 @@ export const productQueryKey = {
     queryKey,
     "product-list",
   ],
+  productDetail: (id: number) => [
+    queryKey,
+    "product-detail",
+    id,
+  ],
 };

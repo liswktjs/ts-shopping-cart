@@ -1,7 +1,7 @@
 import * as stylex from "@stylexjs/stylex";
 import { Icon } from "@iconify/react";
 import { colors } from "../../styles/token.stylex";
-import Text from "../common/Text";
+import Text from "../../shared/components/Text";
 import { useNavigate } from "react-router-dom";
 import { PATH } from "../../Router/path";
 

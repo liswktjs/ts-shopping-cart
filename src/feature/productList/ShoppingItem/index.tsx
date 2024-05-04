@@ -1,7 +1,7 @@
 import * as stylex from "@stylexjs/stylex";
 import { Icon } from "@iconify/react";
-import { colors } from "../../styles/token.stylex";
-import Text from "../../shared/components/Text";
+import { colors } from "../../../styles/token.stylex";
+import Text from "../../../shared/components/Text";
 
 const style = stylex.create({
   container: {

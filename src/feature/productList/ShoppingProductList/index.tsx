@@ -1,8 +1,8 @@
 import * as stylex from "@stylexjs/stylex";
-import type { ProductType } from "../../shared/product/api/queries/useGetInfiniteProductList";
-import ShoppingItem from "./ShoppingItem";
+import type { ProductType } from "../../../shared/product/api/queries/useGetInfiniteProductList";
+import ShoppingItem from "../ShoppingItem";
 import { useNavigate } from "react-router-dom";
-import { PATH } from "../../Router/path";
+import { PATH } from "../../../Router/path";
 
 const style = stylex.create({
   container: {

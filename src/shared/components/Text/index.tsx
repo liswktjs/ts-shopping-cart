@@ -77,7 +77,7 @@ interface Props
   style?: stylex.StyleXStyles;
 }
 
-const Text = ({
+export const Text = ({
   variant,
   children,
   style,
@@ -95,5 +95,3 @@ const Text = ({
     </div>
   );
 };
-
-export default Text;

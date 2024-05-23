@@ -8,7 +8,7 @@ interface Props {
   triggerAction: () => void;
 }
 
-const ObserverContainer = ({
+export const ObserverContainer = ({
   children,
   triggerAction,
 }: PropsWithChildren<Props>) => {
@@ -45,5 +45,3 @@ const ObserverContainer = ({
     </div>
   );
 };
-
-export default ObserverContainer;

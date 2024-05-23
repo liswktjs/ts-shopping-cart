@@ -1,5 +1,5 @@
 import useGetInfiniteProductList from "../shared/product/api/queries/useGetInfiniteProductList";
-import ObserverContainer from "../shared/components/ObserverContainer";
+import { ObserverContainer } from "../shared/components";
 import ShoppingProductList from "../feature/productList";
 
 const HomePage = () => {

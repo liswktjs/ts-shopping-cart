@@ -1,9 +1,9 @@
 import * as stylex from "@stylexjs/stylex";
 import { Icon } from "@iconify/react";
-import { colors } from "../../../styles/token.stylex";
-import Text from "../Text";
+import { colors } from "../../styles/token.stylex";
+import { Text } from "../../shared/components";
 import { useNavigate } from "react-router-dom";
-import { PATH } from "../../../Router/path";
+import { PATH } from "../../Router/path";
 
 const style = stylex.create({
   header: {

@@ -68,7 +68,7 @@ interface Props
   style?: stylex.StyleXStyles;
 }
 
-const Button = ({
+export const Button = ({
   children,
   style,
   variant,
@@ -86,5 +86,3 @@ const Button = ({
     </button>
   );
 };
-
-export default Button;

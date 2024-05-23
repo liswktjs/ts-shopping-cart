@@ -1,10 +1,11 @@
 import { useParams } from "react-router-dom";
-
-import useGetProductDetailInfo from "../../../shared/product/api/queries/useGetProductDetailInfo";
 import * as stylex from "@stylexjs/stylex";
+import useGetProductDetailInfo from "../../../shared/product/api/queries/useGetProductDetailInfo";
 import { colors } from "../../../styles/token.stylex";
-import Button from "../../../shared/components/Button";
-import Text from "../.././../shared/components/Text";
+import {
+  Button,
+  Text,
+} from "../../../shared/components";
 
 const style = stylex.create({
   container: {

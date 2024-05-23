@@ -1,13 +1,11 @@
-import { PropsWithChildren } from "react";
 import Header from "../shared/components/Header";
+import { Outlet } from "react-router-dom";
 
-const Layout = ({
-  children,
-}: PropsWithChildren) => {
+const Layout = () => {
   return (
     <main>
       <Header />
-      {children}
+      <Outlet />
     </main>
   );
 };

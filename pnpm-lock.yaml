@@ -1,6 +1,8 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@iconify/react': ^4.1.1
+  '@stylexjs/eslint-plugin': ^0.5.1
   '@stylexjs/stylex': ^0.5.1
   '@tanstack/react-query': ^5.28.12
   '@types/react': ^18.2.66
@@ -14,18 +16,22 @@ specifiers:
   jotai: ^2.7.2
   react: ^18.2.0
   react-dom: ^18.2.0
+  react-router-dom: ^6.22.3
   typescript: ^5.2.2
   vite: ^5.2.0
   vite-plugin-stylex: ^0.8.2
 
 dependencies:
+  '@iconify/react': 4.1.1_react@18.2.0
   '@stylexjs/stylex': 0.5.1
   '@tanstack/react-query': 5.28.12_react@18.2.0
   jotai: 2.7.2_glxuhseaxnynb3wl34vdbiopru
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
+  react-router-dom: 6.22.3_biqbaboplfbrettd7655fr4n2y
 
 devDependencies:
+  '@stylexjs/eslint-plugin': 0.5.1
   '@types/react': 18.2.73
   '@types/react-dom': 18.2.23
   '@typescript-eslint/eslint-plugin': 7.5.0_g77bhzxf5vnp2ug4ktk2ntgcnm
@@ -564,6 +570,19 @@ packages:
     resolution: {integrity: sha512-93zYdMES/c1D69yZiKDBj0V24vqNzB/koF26KPaagAfd3P/4gUlh3Dys5ogAK+Exi9QyzlD8x/08Zt7wIKcDcA==}
     dev: true
 
+  /@iconify/react/4.1.1_react@18.2.0:
+    resolution: {integrity: sha512-jed14EjvKjee8mc0eoscGxlg7mSQRkwQG3iX3cPBCO7UlOjz0DtlvTqxqEcHUJGh+z1VJ31Yhu5B9PxfO0zbdg==}
+    peerDependencies:
+      react: '>=16'
+    dependencies:
+      '@iconify/types': 2.0.0
+      react: 18.2.0
+    dev: false
+
+  /@iconify/types/2.0.0:
+    resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
+    dev: false
+
   /@jridgewell/gen-mapping/0.3.5:
     resolution: {integrity: sha512-IzL8ZoEDIBRWEzlCcRhOaCupYyN5gdIK+Q6fbFdPDg6HqX6jpkItn7DFIpW9LQzXG6Df9sA7+OKnq0qlz/GaQg==}
     engines: {node: '>=6.0.0'}
@@ -614,6 +633,11 @@ packages:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.17.1
     dev: true
+
+  /@remix-run/router/1.15.3:
+    resolution: {integrity: sha512-Oy8rmScVrVxWZVOpEF57ovlnhpZ8CCPlnIIumVcV9nFdiSIrus99+Lw78ekXyGvVDlIsFJbSfmSovJUhCWYV3w==}
+    engines: {node: '>=14.0.0'}
+    dev: false
 
   /@rollup/rollup-android-arm-eabi/4.13.2:
     resolution: {integrity: sha512-3XFIDKWMFZrMnao1mJhnOT1h2g0169Os848NhhmGweEcfJ4rCi+3yMCOLG4zA61rbJdkcrM/DjVZm9Hg5p5w7g==}
@@ -746,6 +770,12 @@ packages:
       '@stylexjs/stylex': 0.5.1
     transitivePeerDependencies:
       - supports-color
+    dev: true
+
+  /@stylexjs/eslint-plugin/0.5.1:
+    resolution: {integrity: sha512-bt5lZZAgOqscmF09wXyNNV7K2dkLgqY8mTabezf0NMkPmm4BvYuKij+aMo41Z56AdA2WX4NyCb6GaVUwihvmRQ==}
+    dependencies:
+      micromatch: 4.0.5
     dev: true
 
   /@stylexjs/shared/0.5.1:
@@ -1784,6 +1814,29 @@ packages:
     resolution: {integrity: sha512-wViHqhAd8OHeLS/IRMJjTSDHF3U9eWi62F/MledQGPdJGDhodXJ9PBLNGr6WWL7qlH12Mt3TyTpbS+hGXMjCzQ==}
     engines: {node: '>=0.10.0'}
     dev: true
+
+  /react-router-dom/6.22.3_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-7ZILI7HjcE+p31oQvwbokjk6OA/bnFxrhJ19n82Ex9Ph8fNAq+Hm/7KchpMGlTgWhUxRHMMCut+vEtNpWpowKw==}
+    engines: {node: '>=14.0.0'}
+    peerDependencies:
+      react: '>=16.8'
+      react-dom: '>=16.8'
+    dependencies:
+      '@remix-run/router': 1.15.3
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+      react-router: 6.22.3_react@18.2.0
+    dev: false
+
+  /react-router/6.22.3_react@18.2.0:
+    resolution: {integrity: sha512-dr2eb3Mj5zK2YISHK++foM9w4eBnO23eKnZEDs7c880P6oKbrjz/Svg9+nxqtHQK+oMW4OtjZca0RqPglXxguQ==}
+    engines: {node: '>=14.0.0'}
+    peerDependencies:
+      react: '>=16.8'
+    dependencies:
+      '@remix-run/router': 1.15.3
+      react: 18.2.0
+    dev: false
 
   /react/18.2.0:
     resolution: {integrity: sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==}
